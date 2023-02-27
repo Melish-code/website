@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!--Creating Navigation Bar-->
+  <nav>
+    <div class="nav-wrapper">
+      <ul class="nav-left">
+        <li><a class="nav-item" href="#home">Home</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a class="nav-item" href="#about-me">About Me</a></li>
+        <li><a class="nav-item" href="#blog">Blog</a></li>
+        <li><a class="nav-item" href="#feedback">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--Home section -->
+  <div class="container">
+    <main id="home">
+      <div class="home-left">
+        <h4 class="title"> Welcome to my Portfolio !</h4>
+        <br>
+        <h1>Melish Bhandari</h1>
+        <p>
+          Practise... You will succeed.
+        </p>
+      </div>
+      <div class="home-right">
+        <img src="./images/melish_profile.jpeg" alt="Melish Bhandari" />
+      </div>
+    </main>
+    <!--About me section-->
+    <section id="about-me">
+      <div class="section-header">
+        <h1 class="section-title">About</h1>
+        <h2 class="section-subtitle">A little about me</h2>
+
+      </div>
+      <div class="about-wrapper">
+        <div class="about-left">
+          <h3 class="title">Hello!</h3>
+          <p>
+             I am Melish Bhandari a BCA student. I am tech nerd, photographer, video editor, graphics designer. A guy who has a keen interest
+            learning new tools and designing. I like to design, code and create content. I believe in power of tech communities.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:melishbhandari@gmail.com" class="contact-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/melisbhandari" class="contact-link"><i
+                class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/MelishTweet" class="contact-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.github.com/Melish-code" class="contact-link"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/this_is_melish/" class="contact-link"><i class="fab fa-instagram"></i></a>
+         
+          </div>
+        </div>
+        <div class="about-right">
+          <h3 class="title">My Skills</h3>
+          <ul>
+            <li class="progress-wrapper">
+              <h4 class="title">HTML</h4>
+              <div class="progress">
+                <div class="progress-val" style="width: 60%"></div>
+              </div>
+            </li>
+            <li class="progress-wrapper">
+              <h4 class="title">CSS</h4>
+              <div class="progress">
+                <div class="progress-val" style="width: 30%"></div>
+              </div>
+            </li>
+            <li class="progress-wrapper">
+              <h4 class="title">Photoshop</h4>
+              <div class="progress">
+                <div class="progress-val" style="width: 90%"></div>
+              </div>
+            </li>
+            <li class="progress-wrapper">
+              <h4 class="title">Premiere Pro</h4>
+              <div class="progress">
+                <div class="progress-val" style="width: 60%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Education section-->
+      <div class="section-header">
+        <h1 class="section-title">Education</h1>
+        <h2 class="section-subtitle">Currently studying</h2>
+      </div>
+      <div class="education-wrapper">
+        <h4 class="title">Bachelor in Computer Application</h4>
+        <p class="subtitle"> <a href="https://mechicampus.edu.np/", target="_blank" class="campus">Mechi Multiple Campus</a></p>
+        <span class="caption">2020 - 2024</span>
+      </div>
+    </section>
+    <!--Blog Section to create a link which opens blog in another tab-->
+    <section id="blog"> 
+      <div class="section-header">
+        <h1 class="section-title">Blog</h1>
+        <h2 class="section-subtitle">My Photography journey</h2>
+      </div>
+      <div class="blog-wrapper">
+        <article class="article-card">
+          <img src="./images/camera.jpg" alt="Photography" class="article-thumbnail" />
+          <div class="article-body">
+            <span class="article-date">Since 2019</span>
+            <h4 class="title">
+              <a href="./blogs/photography.html" target="_blank">Photography</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!--Feedback section for form validation through JavaScript-->
+    <section id="feedback">
+      <div class="section-header">
+        <h1 class="section-title">Feedback</h1>
+        <h2 class="section-subtitle">Let me know what you think</h2>
+      </div>
+      <div class="form-wrapper">
+        <form action="#" method="POST">
+          <label for="name" class="title">Name</label>
+          <input type="text" name="name" id="name" class="form-field" placeholder="John Doe">
+          <label for="email" class="title">Email</label>
+          <input type="email" name="email" id="email" class="form-field" placeholder="example@example.com">
+          <label for="message" class="title">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <br>
+          <div class="form-submit">
+            <button type="submit" class="button-disabled">submit</button>
+            <img src="./images/loader.gif" alt="Loader" class="d-none" id="loader" style="display: none;">
+          </div>
+        </form>
+        <div class="form-right">
+
+          <img src="illustrations/coding.svg" alt="Coding">
+          <div class="contact-links">
+            <a href="mailto:melishbhandari@gmail.com" class="contact-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/melisbhandari" class="contact-link"><i
+                class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/MelishTweet" class="contact-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.github.com/Melish-code" class="contact-link"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/this_is_melish" class="contact-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
+  <script>
+    // form validation
+    document
+      .querySelector(".form-wrapper form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        // get the form input values
+        const email = document.querySelector("#email");
+        const name = document.querySelector("#name");
+        const message = document.querySelector("#message");
+        const loader = document.getElementById("loader")
+        // check if the data is valid or not
+        if (!validateEmail(email.value)) {
+          alert("Email provided is not valid!");
+          return;
+        }
+
+        if (!name.value) {
+          alert("Name is required!");
+          return;
+        }
+
+        if (!message.value) {
+          alert("Message is required!");
+          return;
+        }
+
+        // if the data is valid then show the loader
+        loader.style.display = "block"
+
+        // assume the form submission takes 1500 miliseconds which is 1.5 seconds
+        setTimeout(() => {
+          // this runs after 1.5s assuming it takes 1.5s to submit the data to the server and get the response
+          loader.style.display = "none";
+          // after the form is submitted clear the form values
+          email.value = "";
+          name.value = "";
+          message.value = "";
+
+          //and show a alert
+          alert("Form submitted successfully!")
+        }, 1500);
+      });
+  </script>
+</body>
+
+</html>
