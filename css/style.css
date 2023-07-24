@@ -143,8 +143,8 @@ nav {
 }
 
 #home .home-right img {
-  height: auto;
-  max-width: 100%
+  height: 40%;
+  width: 100%
   display: block;
   object-fit: cover;
   margin-right: -20px;
