@@ -143,8 +143,8 @@ nav {
 }
 
 #home .home-right img {
-  height: 30%;
-  width: 100%;
+  height: auto;
+  max-width: 100%
   display: block;
   object-fit: cover;
   margin-right: -20px;
@@ -470,3 +470,6 @@ form button[type="submit"]:active {
   margin-bottom: 10px;
   text-align: justify;
 }
+
+
+
