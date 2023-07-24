@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> 
 <html lang="en">
 
 <head>
@@ -18,6 +18,143 @@
 </head>
 
 <body>
+  <!--Same Navigation Bar as home page for seamless page shifting and scrolling
+  <nav>
+    <div class="nav-wrapper">
+      <ul class="nav-left">
+        <li><a class="nav-item" href="../index.html">Home</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li>
+          <a class="nav-item" href="../index.html#about-me">About Me</a>
+        </li>
+<!--         <li><a class="nav-item" href="../resume.html">Resume</a></li> 
+        <li><a class="nav-item" href="../index.html#blog">Blog</a></li>
+        <li>
+<!--           <a class="nav-item" href="../index.html#research">Research</a> 
+        </li>
+        <li>
+          <a class="nav-item" href="../index.html#feedback">Feedback</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Blog of Impact of Technology
+  <div class="container">
+    <article class="blog-entry">
+      <h1 class="title">Photography.</h1>
+      <div class="author-info">
+        <img src="../images/melish_ava.jpg" alt="Melish Bhandari" />
+        <p>Melish Bhandari</p>
+      </div>
+      <br />
+      <h4 class="title">My Photography Journey</h4>
+      <p>Since starting my photography career in mid-2019, I have brought a high level of passion and dedication to my work. 
+        Currently, I am the proud owner of "Tasbir Creation" and I'm working with 3 other studios too!
+        As a certified professional photographer and cinematographer, I have honed my craft and developed a unique style that is evident in my work.
+        My passion, talent and dedication for photography and commitment to excellence has earned me a reputation as a true professional in the industry. 
+        My clients appreciate our attention to detail and creative vision, which has resulted in many successful projects and satisfied customers. 
+        With my talent and drive, mine photography career is sure to continue to thrive and grow.
+      </p>
+    </article>
+  </div>
+  <!-- External JavaScript function for page scrolling automatically by click on nav bar
+  <script src="../js/script.js"></script>
+</body>
+
+</html> 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Blog: Impact of Technology</title>
+  <style>
+    body {
+      background-color: #eef0f1;
+      margin: 0; /* Reset default margin to prevent horizontal scroll */
+    }
+
+    /* Responsive styles for navigation bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left,
+    .nav-right {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-item {
+      margin-right: 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Styles for author info */
+    .author-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .author-info img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    /* Responsive styles for blog content */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .blog-entry {
+      margin-bottom: 30px;
+    }
+
+    /* Responsive styles for blog entry text */
+    @media screen and (max-width: 768px) {
+      .author-info {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .author-info img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
   <!--Same Navigation Bar as home page for seamless page shifting and scrolling-->
   <nav>
     <div class="nav-wrapper">
@@ -28,10 +165,10 @@
         <li>
           <a class="nav-item" href="../index.html#about-me">About Me</a>
         </li>
-<!--         <li><a class="nav-item" href="../resume.html">Resume</a></li> -->
+        <li><a class="nav-item" href="../resume.html">Resume</a></li>
         <li><a class="nav-item" href="../index.html#blog">Blog</a></li>
         <li>
-<!--           <a class="nav-item" href="../index.html#research">Research</a> -->
+          <a class="nav-item" href="../index.html#research">Research</a>
         </li>
         <li>
           <a class="nav-item" href="../index.html#feedback">Feedback</a>
@@ -49,12 +186,13 @@
       </div>
       <br />
       <h4 class="title">My Photography Journey</h4>
-      <p>Since starting my photography career in mid-2019, I have brought a high level of passion and dedication to my work. 
-        Currently, I am the proud owner of "Tasbir Creation" and I'm working with 3 other studios too!
-        As a certified professional photographer and cinematographer, I have honed my craft and developed a unique style that is evident in my work.
-        My passion, talent and dedication for photography and commitment to excellence has earned me a reputation as a true professional in the industry. 
-        My clients appreciate our attention to detail and creative vision, which has resulted in many successful projects and satisfied customers. 
-        With my talent and drive, mine photography career is sure to continue to thrive and grow.
+      <p>Since starting my photography career in mid-2019, I have brought a high level of passion and dedication to my
+        work. Currently, I am the proud owner of "Tasbir Creation" and I'm working with 3 other studios too! As a
+        certified professional photographer and cinematographer, I have honed my craft and developed a unique style that
+        is evident in my work. My passion, talent and dedication for photography and commitment to excellence has earned
+        me a reputation as a true professional in the industry. My clients appreciate our attention to detail and
+        creative vision, which has resulted in many successful projects and satisfied customers. With my talent and
+        drive, mine photography career is sure to continue to thrive and grow.
       </p>
     </article>
   </div>
